@@ -9,6 +9,7 @@ Config.Locations = {
     ["checking"] = {
 	    [1] = vector3(308.19, -595.35, 43.29),
 	    [2] = vector3(-254.54, 6331.78, 32.43), -- paleto
+        [3] = vector3(1828.47, 3685.31, 34.27), -- sandy
     },
     ["duty"] = {
         [1] = vector3(311.18, -599.25, 43.29),
@@ -48,9 +49,14 @@ Config.Locations = {
 	    [9] = {coords = vector4(-252.43, 6312.25, 32.34, 313.48), taken = false, model = 2117668672},
         [10] = {coords = vector4(-247.04, 6317.95, 32.34, 134.64), taken = false, model = 2117668672},
         [11] = {coords = vector4(-255.98, 6315.67, 32.34, 313.91), taken = false, model = 2117668672},
+    --- sandy
+	    [12] = {coords = vector4(1819.57, 3673.15, 35.2, 211.91), taken = false, model = 2117668672},
+        [13] = {coords = vector4(1826.48, 3676.75, 35.2, 26.42), taken = false, model = 2117668672},
     },
     ["stations"] = {
-        [1] = {label = Lang:t('info.pb_hospital'), coords = vector4(304.27, -600.33, 43.28, 272.249)}
+        [1] = {label = Lang:t('info.pb_hospital'), coords = vector4(304.27, -600.33, 43.28, 272.249)},
+        [2] = {label = Lang:t('info.pl_hospital'), coords = vector4(-253.46, 6329.6, 32.43, 48.52)},
+        [3] = {label = Lang:t('info.ss_hospital'), coords = vector4(1837.69, 3675.38, 34.27, 31.88)},
     }
 }
 
@@ -101,36 +107,12 @@ Config.Items = {
             slot = 2,
         },
         [3] = {
-            name = "painkillers",
-            price = 0,
-            amount = 50,
-            info = {},
-            type = "item",
-            slot = 3,
-        },
-        [4] = {
             name = "firstaid",
             price = 0,
             amount = 50,
             info = {},
             type = "item",
             slot = 4,
-        },
-        [5] = {
-            name = "weapon_flashlight",
-            price = 0,
-            amount = 50,
-            info = {},
-            type = "item",
-            slot = 5,
-        },
-        [6] = {
-            name = "weapon_fireextinguisher",
-            price = 0,
-            amount = 50,
-            info = {},
-            type = "item",
-            slot = 6,
         },
     }
 }
