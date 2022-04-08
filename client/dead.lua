@@ -16,7 +16,7 @@ function OnDeath()
     if not isDead then
         isDead = true
         TriggerServerEvent("hospital:server:SetDeathStatus", true)
-        TriggerServerEvent("InteractSound_SV:PlayOnSource", "demo", 0.1)
+        -- TriggerServerEvent("InteractSound_SV:PlayOnSource", "demo", 0.1)
         local player = PlayerPedId()
 
         while GetEntitySpeed(player) > 0.5 or IsPedRagdoll(player) do
